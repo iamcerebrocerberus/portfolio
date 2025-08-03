@@ -8,8 +8,8 @@ import dynamic from "next/dynamic";
 // import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Luke Berry",
-  description: "Luke Berry's personal website",
+  title: "Seth Mensah",
+  description: "Seth Mensah's personal website",
 };
 
 const karla = Karla({
@@ -28,7 +28,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-screen">
       <body className={`${karla.className} min-h-full px-6`}>
-        {/*<Analytics />*/}
         <Script id="theme-toggle" strategy="afterInteractive">
           {`document.documentElement.classList.toggle("dark", localStorage.theme ===
         "dark" || (!("theme" in localStorage) &&
@@ -43,28 +42,28 @@ export default function RootLayout({
           <div className="flex items-center gap-4">
             <a
               className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
-              href="https://github.com/LukeberryPi/blog"
+              href="https://github.com/iamcerebrocerberus/portfolio.git"
               target="_blank"
             >
               Code
             </a>
-            <Link
+            {/* <Link
               className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
               target="_blank"
               href="/rss.xml"
             >
               RSS Feed
-            </Link>
+            </Link> */}
             <a
               className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
-              href="https://x.com/LukeberryPi"
+              href="https://x.com/cerebrocerberus"
               target="_blank"
             >
-              @LukeberryPi
+              @cerebrocerberus
             </a>
           </div>
           <blockquote className="text-zinc-800 dark:text-zinc-300">
-            Smile, you&apos;re alive :)
+            @cerebrocerberus
           </blockquote>
         </footer>
       </body>

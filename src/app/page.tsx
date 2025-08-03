@@ -49,33 +49,33 @@ const externalLinks: Link[] = [
   {
     name: "LinkedIn",
     description: "follow my career",
-    url: "https://linkedin.com/in/lukeberrypi",
+    url: "https://linkedin.com/in/cerebrocerberus",
     icon: <SiLinkedin className="fill-[#0077B5] dark:fill-zinc-200" />,
   },
   {
     name: "GitHub",
     description: "steal my code",
-    url: "https://github.com/lukeberrypi",
+    url: "https://github.com/iamcerebrocerberus",
     icon: <SiGithub />,
   },
-  {
-    name: "YouTube",
-    description: "watch me talk",
-    url: "https://youtube.com/@lukeberrypi",
-    icon: <SiYoutube className="fill-[#FF0032] dark:fill-zinc-200" />,
-  },
+  // {
+  //   name: "YouTube",
+  //   description: "watch me talk",
+  //   url: "https://youtube.com/@lukeberrypi",
+  //   icon: <SiYoutube className="fill-[#FF0032] dark:fill-zinc-200" />,
+  // },
   {
     name: "X (formerly Twitter)",
     description: "read my mind",
-    url: "https://x.com/lukeberrypi",
+    url: "https://x.com/cerebrocerberus",
     icon: <XLogo />,
   },
-  {
-    name: "Get 10% OFF Raycast Pro",
-    description: "upgrade your workflow",
-    url: "https://www.raycast.com/pro?via=lukeberrypi",
-    icon: <RaycastLogo />,
-  },
+  // {
+  //   name: "Get 10% OFF Raycast Pro",
+  //   description: "upgrade your workflow",
+  //   url: "https://www.raycast.com/pro?via=lukeberrypi",
+  //   icon: <RaycastLogo />,
+  // },
 ];
 
 const ExternalLink = (link: Link) => {
@@ -103,10 +103,8 @@ const ExternalLink = (link: Link) => {
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
-      <p className="text-sm">
-        London-based Brazilian obsessed with UI for a decade. Working as a
-        Software Engineer for half that time. I love Raycast, TailwindCSS,
-        DJing, playing football, and creating pretty websites.
+      <p className="text-md">
+        I'm a pragmatic software engineer with a strong focus on backend development. I build scalable, reliable systems and care deeply about clean architecture, practical problem-solving, and collaborative growth. I'm passionate about open source and love supporting others in the tech community.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
         {externalLinks.map((link: Link) => (
@@ -116,14 +114,14 @@ export default function HomePage() {
       <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
         <div className="flex flex-col justify-center gap-4 max-sm:items-center">
           <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-all">
-            lukeberrypi@gmail.com
+            sethmensahjr@gmail.com
             <div className="inline-flex items-center gap-3">
               {/* TODO add copy email
                 <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
                 <Copy className="size-4" />
               </button> */}
               <a
-                href="mailto:lukeberrypi@gmail.com"
+                href="mailto:sethmensahjr@gmail.com"
                 className="text-zinc-800 dark:text-zinc-200"
               >
                 <Send strokeWidth={1.4} className="size-4" />
